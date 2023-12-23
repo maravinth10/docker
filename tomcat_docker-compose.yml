@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  tomcat:
+    image: jjaba/myweb:0.0.2
+    volumes:
+       - /home/ec2-user/sycdoc:/usr/local/tomcat/webapps
+    ports:
+      - "80:8080"
